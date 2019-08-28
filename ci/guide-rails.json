@@ -64,18 +64,6 @@
 						"definition": "Build Instrumented",
 						"command": "go test -c -coverpkg=all -covermode=count -o ((application.name))-instrumented",
 						"properties": null
-					},
-					{
-						"name": "Build Isolation Test",
-						"definition": "Build Isolation Test",
-						"command": "cd test/isolation\ngo test -c -coverpkg=all -covermode=count -o ((application.name))-isolation.test",
-						"properties": null
-					},
-					{
-						"name": "Build Integration Test",
-						"definition": "Build Integration Test",
-						"command": "cd test/integration\ngo test -c -coverpkg=all -covermode=count -o ((application.name))-integration.test",
-						"properties": null
 					}
 				],
 				"exit_actions": {
