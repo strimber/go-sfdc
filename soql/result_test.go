@@ -1,7 +1,10 @@
 package soql
 
 import (
+	"io/ioutil"
+	"net/http"
 	"reflect"
+	"strings"
 	"testing"
 )
 
@@ -291,7 +294,7 @@ func TestQueryResult_Next(t *testing.T) {
 			want:    nil,
 			wantErr: true,
 		},
-		/* {
+		{
 			name: "No more records 2",
 			fields: fields{
 				response: queryResponse{
@@ -382,7 +385,7 @@ func TestQueryResult_Next(t *testing.T) {
 				}),
 			},
 			wantErr: false,
-		}, */
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
