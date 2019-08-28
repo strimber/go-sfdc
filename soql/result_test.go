@@ -295,7 +295,7 @@ func TestQueryResult_Next(t *testing.T) {
 			wantErr: true,
 		},
 		{
-			name: "No more records",
+			name: "No more records 2",
 			fields: fields{
 				response: queryResponse{
 					NextRecordsURL: "/services/data/v20.0/query/01gD0000002HU6KIAW-2000",
