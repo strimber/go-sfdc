@@ -30,6 +30,12 @@
 				"segment_type": "build",
 				"job_steps": [
 					{
+						"name": "GoLang Version",
+						"definition": "GoLang Version",
+						"command": "echo \"GoLang Version\"\ngo version",
+						"properties": null
+					},
+					{
 						"name": "Get Dependencies",
 						"definition": "Get Dependencies",
 						"command": "go get -t -d ./...",
